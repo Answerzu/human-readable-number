@@ -11,12 +11,12 @@ module.exports = function toReadable(num) {
         return ones[num];
     }
 
-    if (numString.length == 2 && numString[2] === '0') {
+    if (numString.length == 2 && numString[1] === '0') {
 
         return tens[numString[0]];
     }
 
-    if (numString.length == 2 && numString[2] !== '0') {
+    if (numString.length == 2 && numString[1] !== '0') {
         return tens[numString[0]] + ' ' + ones[numString[1]];
     }
 
